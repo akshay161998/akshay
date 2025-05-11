@@ -1,0 +1,19 @@
+def longestprefix(strs):
+    if len(strs)==0:
+        return ""
+    
+    prefix=strs[0]
+    
+    for word in strs[1:]:
+        temp=""
+        for i in range(min(len(prefix), len(word))):
+            if prefix[i] == word[i]:
+                temp += prefix[i]
+            else:
+                break  
+        prefix = temp  
+
+        if prefix == "":
+            return ""
+
+    return prefix
