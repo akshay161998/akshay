@@ -1,0 +1,3 @@
+select *
+from products
+where low_facts="Y" and recyclable="Y";
