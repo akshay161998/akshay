@@ -1,0 +1,8 @@
+def strStr(haystack, needle):
+    # Use the built-in find() method which returns the index of the first occurrence, or -1 if not found
+    return haystack.find(needle)
+
+
+haystack = "sadbutsad"
+needle = "sad"
+print(strStr(haystack, needle))
